@@ -17,6 +17,7 @@
 development:
   adapter: postgresql
   encoding: unicode
+  host: localhost
   database: quiz_app_development
   pool: 5
   username: 
@@ -47,6 +48,7 @@ test:
   adapter: postgresql
   encoding: unicode
   database: quiz_app_test
+  host: localhost
   pool: 5
   username: 
   password:
@@ -55,6 +57,7 @@ production:
   adapter: postgresql
   encoding: unicode
   database: quiz_app_production
+  host: localhost
   pool: 5
   username: 
   password:
