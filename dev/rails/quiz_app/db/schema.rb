@@ -18,12 +18,12 @@ ActiveRecord::Schema.define(version: 20131010154246) do
 
   create_table "answers", force: true do |t|
     t.text     "response"
-    t.integer  "quesiton_id"
+    t.integer  "question_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "answers", ["quesiton_id"], name: "index_answers_on_quesiton_id", using: :btree
+  add_index "answers", ["question_id"], name: "index_answers_on_question_id", using: :btree
 
   create_table "questions", force: true do |t|
     t.text     "query"
