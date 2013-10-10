@@ -66,5 +66,12 @@ describe 'the quizzes section' do
       expect(Quiz.last.questions).not_to be_empty
     end
 
+    it 'should not accept a new quiz without a title' do
+      visit '/quizzes/new'
+      click_button 'Create Quiz'
+
+      expect(page).to have_content 'error'
+    end
+
     
 end
